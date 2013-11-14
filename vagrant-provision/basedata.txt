@@ -1,0 +1,3 @@
+INSERT a INTO Alfabet
+INSERT b INTO Alfabet
+INSERT c INTO Alfabet
