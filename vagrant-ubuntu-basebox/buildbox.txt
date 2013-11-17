@@ -1,0 +1,5 @@
+vagrant destroy
+vagrant up
+vagrant ssh ; <i box> sudo apt-get upgrade
+vagrant package --output ubuntu-12-base-${date}.box
+vagrant package --output /Volumes/rugged-mac/vm/vagrant/vagrantboxes/ubuntu-12-lts-headless-basebox.box
