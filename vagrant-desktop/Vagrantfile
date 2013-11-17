@@ -1,0 +1,28 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Purpose of this Vagrant project is to take a headless (upgraded) ubuntu box
+# and install xubuntu, resulting in a desktop ubuntu box.
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  # Every Vagrant virtual environment requires a box to build off of.
+  config.vm.box = "precise32-upgraded-20131117"
+
+  # The url from where the 'config.vm.box' box will be fetched if it
+  # doesn't already exist on the user's system.
+  # This is a headless box of Ubuntu 12.04 LTS which has been "apt-get upgrade" on 20131117
+  config.vm.box_url = "https://s3-eu-west-1.amazonaws.com/danbjson-op-vagrantboxes/ubuntu-base/ubuntu-12-lts-headless-basebox-20131117.box"
+
+  # Enable provisioning with shell script
+  config.vm.provision "shell", path: "provision-install-xubuntu-desktop.sh"
+
+  # Boot to desktop mode
+  config.vm.provider :virtualbox do |vb|
+     vb.gui = true
+  end
+end
+  
