@@ -1,5 +1,4 @@
 Purpose of this project is to create a desktop ubuntu box, given a headless upgraded ubuntu box
 
-vagrant up to create box and provision xubuntu desktop
-vagrant halt / vagrant up to reboot with gui
-create desktop user javadev using script in host-script
+as install of xubuntu is very hard to script, this have to me done manually
+follow steps in recipe.txt

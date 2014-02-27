@@ -18,7 +18,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_url = "https://s3-eu-west-1.amazonaws.com/danbjson-op-vagrantboxes/ubuntu-base/ubuntu-12-lts-headless-basebox-20131117.box"
 
   # Enable provisioning with shell script
-  config.vm.provision "shell", path: "provision-install-xubuntu-desktop.sh"
+  config.vm.provision "shell", path: "noop.sh"
 
   # Boot to desktop mode
   config.vm.provider :virtualbox do |vb|
