@@ -1,0 +1,4 @@
+vagrant up
+vagrant ssh
+in guest: guest-scripts/apt-get-install-xubuntu-desktop.sh
+vagrant package --output ubuntu-12-lts-desktop-basebox-<date>.box

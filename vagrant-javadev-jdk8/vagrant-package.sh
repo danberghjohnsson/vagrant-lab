@@ -1,0 +1,1 @@
+vagrant package --output ~/srv/vagrantboxes/ubuntu-java8-desktop-`date "+%Y%m%d"`.box

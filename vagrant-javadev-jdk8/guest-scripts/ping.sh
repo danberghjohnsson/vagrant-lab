@@ -1,0 +1,1 @@
+touch /vagrant/ping.txt
