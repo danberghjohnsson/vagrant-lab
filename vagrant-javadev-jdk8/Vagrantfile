@@ -9,12 +9,12 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "javadev-jdk8-20130303"
+  config.vm.box = "javadev-jdk8-20130306"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
   config.vm.box_url = 
-	"https://s3-eu-west-1.amazonaws.com/omegapoint-vm-dframyb0sr714xrk/vagrantboxes/ubuntu-java8-desktop-20140303.box"
+	"https://s3-eu-west-1.amazonaws.com/omegapoint-vm-dframyb0sr714xrk/vagrantboxes/ubuntu-java8-desktop-20140306.box"
 
   # Enable provisioning with shell script
   # config.vm.provision "shell", path: "noop.sh"
